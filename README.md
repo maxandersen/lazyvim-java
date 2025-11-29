@@ -18,3 +18,12 @@ And then, to use it:
 ```shell
 NVIM_APPNAME=lazyvim-java nvim
 ```
+
+## Tips
+
+- Make sure you are running `nvim` with Java 21 as JDT LS needs it, and a recent `npm` as json LS needs it in your path. Without it you will get errors.
+- If you see popups/errors during startup or when opening your first Java project you can press ':' and type 'Snaks.notifier.show_history()` to see the errors.
+
+One way of doing this in isolation to try out is with mise:
+
+`mise x npm@lts java@lts -- NVIM_APPNAME=lazyvim-java nvim`
