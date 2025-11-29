@@ -26,4 +26,4 @@ NVIM_APPNAME=lazyvim-java nvim
 
 One way of doing this in isolation to try out is with mise:
 
-`mise x npm@lts java@lts -- NVIM_APPNAME=lazyvim-java nvim`
+`NVIM_APPNAME=lazyvim-java mise x npm@lts java@lts -- nvim`
